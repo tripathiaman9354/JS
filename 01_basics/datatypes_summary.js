@@ -42,9 +42,33 @@ const myFunction=function(){
 // myFunction()
 // console.log(myFunction());
 
-console.log(typeof myFunction);
-console.log(typeof heros);
-console.log(typeof myObj);
-console.log(typeof anotherId);
+// console.log(typeof myFunction);
+// console.log(typeof heros);
+// console.log(typeof myObj);
+// console.log(typeof anotherId);
 
 
+/********************Memory In Js**********************/
+
+//Stack (Primitive), Heap (Non-Premitive)
+
+let Name = "Aman"
+let nickName = Name;
+nickName="Krishna"
+
+// console.log(nickName);
+// console.log(Name);
+
+
+
+let User1= {
+    email: "aman@gmail.com",
+    upi: "userr@ybl"   
+}  
+
+let User2=User1
+
+User2.email= "aman1221@gmail.com"
+
+console.log(User1.email);
+console.log(User2.email);
